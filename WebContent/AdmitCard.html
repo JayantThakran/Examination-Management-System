@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EXAMINATION | ADMIT CARD</title>   
+      <style>
+
+        .form-bg{
+  
+    background-image:url("admit.jpg");  
+    
+}
+.form-bg{
+     height: 458px;
+    background-color: #f1f2f6;
+    padding: 15% 36% 5% 36%;
+   font-size: 30px;
+   background-size: 100% 100%;   
+    margin:-15px -8px 0px -8px;
+}
+.form-txt-bg{
+    
+    background-color: #222831;
+    border: 1px #ced6e0 solid;
+    border-radius: 3px;
+     background:rgba(0,0,0,0.7);     
+  }
+  
+  .inputs{      
+      background: #433d3c;
+      font-size: 0.5em;
+      width:80%;
+      padding: 0.6em;
+      margin:0 1em;
+      border: 2px #ced6e0 solid;
+      border-radius: 4px;
+      color:#f6ecf0;
+      margin-bottom: 10px;
+    }
+    .inputs:focus{
+        background:#5aa469;
+        outline: none;
+    }
+    .form-btn{
+        width: 85%;
+        margin: 1.4em 0.7em 1.4em ;
+        padding:0.7em;
+        font-size: 0.5em;
+        background-color: #e40017;
+        border:none;
+        border-radius:4px;
+        color: white;
+        font-weight: bolder;
+    }
+    .form-btn:focus{
+        background: none;
+        outline: none;
+    }
+    .form-btn:active{
+        background-color:green;
+        border-color: green;
+    }
+    .forgot a{
+          text-decoration: none;  
+          color:silver;
+      }
+    .forgot{        
+        font-size: 0.5em;   
+        padding-right: 30px;
+        text-align:right;        
+      }        
+      .forgot a:hover{
+          color: blue;
+      }
+      .forgot a:active{
+          color: green;
+      }
+      .input-title{
+      float: left;
+      font-size: 0.6em;
+      font-weight: bolder;
+      margin: 1.4em 0 0 1.2em;
+      padding-left: 15px;      
+      color: silver;
+  }
+
+      </style>
+    </head>
+    <body>                        
+           <div class="form-bg">          
+            <center class="form-txt-bg">
+                <form method="post" action="AdmitCard">                
+                <div class="form-content">               
+                     <div class="input-title">Please Enter Form Number</div> 
+                    <input type="text" id="form" class="inputs" placeholder="Form Number" name="formno">                                       
+                    <button type="submit" class="form-btn">Submit</button>
+                </div>                
+                </form>
+        </center>
+    </div>    
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EXAMINATION | ADMIN MENU</title>   
+       <link rel="stylesheet" href="studentmenu.css" type="text/css" > 
+       <style>
+           .bgforgot{
+     height: 458px;
+    background-color: #f1f2f6;
+    padding: 10% 36% 5% 36%;
+   font-size: 30px;
+   background-size: 100% 100%;   
+    margin:-15px -8px 0px -8px;
+}
+.bgforgot{     
+    background-image:url("menu.jpg");     
+  } 
+.form-txt-bg{    
+    background-color: #222831;
+    border: 1px #ced6e0 solid;
+    border-radius: 3px;
+     background:rgba(0,0,0,0.7);     
+  }
+  .form-header{
+      
+      font-size:0.75em;
+      padding: 35px 0px 15px 30px;   
+      color: white;
+      font-weight: bolder;
+      text-align:left;
+  }    
+    .form-btn{
+        width: 85%;
+        margin: 1.4em 0.7em 1.4em ;
+        padding:0.7em;
+        font-size: 0.5em;
+        background-color: #1a508b;
+        border:none;
+        border-radius:4px;
+        color: white;
+        font-weight: bolder;
+    }
+    .form-btn:focus{
+        background: none;
+        outline: none;
+    }
+    .form-btn:active{
+        background-color:green;
+        border-color: green;
+    }
+    .logout-btn{
+        margin-bottom: 10px;
+        margin-right: 7%;
+        margin-left: 77%;
+        background-color: #e40017;
+        padding: 3px 6px 3px 6px;
+        border-radius: 3px;
+        color:white;
+        font-weight: bold;
+    } 
+    
+    
+    
+       </style>
+    </head>
+    <body>                        
+           <div class="bgforgot">          
+            <center class="form-txt-bg">
+                <form method="post" action="AdminMenu">
+                <div class="form-header">Welcome Admin</div>
+                <div class="form-content">            
+                     
+                     <button type="submit" name='btnvalue' value = "RegStd" class="form-btn">Register Student</button>   
+                     <button type="submit" name='btnvalue' value = "DetStd" class="form-btn">Delete Student</button>
+                     <button type="submit" name='btnvalue' value = "StdDel" class="form-btn">Student Detail</button>                 
+                    <button type="submit" name='btnvalue' value = "EditStdDel" class="form-btn">Edit Student Detail</button>
+                    <button type="submit" name='btnvalue' value = "SubMarks" class="form-btn">Submit Marks</button>
+                   <a href='http://localhost:8085/Demo/Login.html'><button type="button" name='Acard' class="logout-btn">Log Out</button></a>
+                </div>                
+                </form>
+        </center>
+    </div>    
+    </body>
+</html>
